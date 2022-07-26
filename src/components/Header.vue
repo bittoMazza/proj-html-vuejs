@@ -1,6 +1,7 @@
 <template>
   <header >
-    <div class="d-flex justify-content-between container align-items-center py-3">
+    <div class="header-container">
+        <div class="container-nav d-flex justify-content-between container align-items-center py-3">
         <img class="logo-navbar" src="../assets/Images/dark-logo.png" alt="logo-dark">
         <nav class="d-flex align-items-center">    
             <ul>
@@ -13,8 +14,10 @@
             <input type="text" placeholder="Search...">
             <span>Icona</span>
         </div>S      
-    </nav>
+        </nav>
+        </div>
     </div>
+   
     <section class="py-4">
         <div class="container">
             <div class="d-flex align-items-center my-4">
@@ -25,11 +28,11 @@
                     <span class="d-block">Have questions? <a href="#">Get Free Sample --></a></span>
                 </div>
                 <div class="col-7">
-                    <img src="../assets/Images/about-me-profile-ohm4dxoearqbxny7q3bq1pzbdgofdx0tobbeqcvzd0.jpg" class="rounded-circle w-100" alt="">
+                    <img src="../assets/Images/about-me-profile-ohm4dxoearqbxny7q3bq1pzbdgofdx0tobbeqcvzd0.jpg" class="m-5 rounded-circle w-75" alt="">
                 </div>
             </div>
             <div class="clients-logo d-flex justify-content-between">
-                <div v-for="(client,index) in 6" :key="index">
+                <div v-for="(client,index) in 6" :key="index" class="d-flex align-items-center">
                     <img :src="getClientImg(index)" alt="">    
                 </div>
             </div>
@@ -55,15 +58,23 @@ export default {
 
 <style lang="scss">
 
-nav ul li{
-    list-style: none;
-    display: inline-block;
-}
-nav ul{
-    margin: 0;
-}
-.logo-navbar{
-    height: 25px;
-}
+
+.header-container{
+        box-shadow: 0 5px 5px -5px #333;
+
+        .container-nav{
+            nav ul{
+            margin: 0;
+            }
+            .logo-navbar{
+                height: 25px;
+            }   
+            nav ul li{
+            list-style: none;
+            display: inline-block;
+        }
+        }
+    }
+
 
 </style>
