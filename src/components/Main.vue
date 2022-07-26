@@ -42,9 +42,23 @@
     </section>
     <section class="py-5 top-learners-section">
         <div class="container-fluid">
-            <div class="text-center">
-                <span> GREAT WORDS ABOUT MAXCOACH </span>
-                <h3> Access Smart Tutoring Program For Benefits </h3>
+            <div>
+                <div class="text-center">
+                    <span> GREAT WORDS ABOUT MAXCOACH </span>
+                    <h3> Access Smart Tutoring Program For Benefits </h3>
+                </div>
+                
+                <div class="d-flex"> 
+                    <div class="col-4">
+                        card
+                    </div>
+                    <div class="col-4">
+                        card
+                    </div>
+                    <div class="col-4">
+                        card
+                    </div>
+                </div>
             </div>
             <div class="text-center py-5">
                 <h5>Start today for getting Online Certification </h5>
@@ -53,17 +67,27 @@
             </div>
         </div>
     </section>
-        
+    <section class="results-section">
+        <div class="container">
+            <div class="d-flex">
+                <CardResults v-for="(resultInfo,index) in results" :key="index"
+                :resultData ="resultInfo"
+                />
+            </div>
+        </div>
+    </section>
   </main>
 </template>
 
 <script>
 import CardSmartTutoring from "./CardSmartTutoring.vue"
 import CardCourse from "./CardCourse.vue"
+import CardResults from "./CardResults.vue"
 export default {
     components:{
         CardCourse,
         CardSmartTutoring,
+        CardResults,
     },
     data:function(){
         return{
@@ -141,6 +165,28 @@ export default {
                     title:'Customize Prefences',
                     info:'You can store online lessons via online cloud or download to your device and revise lessons on the way.',
                     linkText:'Start now'
+                },
+            ],
+            results:[
+                {
+                    title:'Succesfully trained',
+                    num:1790,
+                    numInfo:'ENROLLED LEARNERS'
+                },
+                {
+                    title:'Proudly Received',
+                    num:19,
+                    numInfo:'ENROLLED LEARNERS'
+                },
+                {
+                    title:'Fimly Established',
+                    num:24,
+                    numInfo:'ENROLLED LEARNERS'
+                },
+                {
+                    title:'Succesfully trained',
+                    num:1090,
+                    numInfo:'ENROLLED LEARNERS'
                 },
             ]
 
