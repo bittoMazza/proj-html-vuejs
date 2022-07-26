@@ -23,7 +23,14 @@ export default {
 
 <style lang="scss">
 @import "~bootstrap/scss/bootstrap.scss";
-body{
-  
+ul{
+  margin: 0;
+  padding: 0;
+}
+ul li{
+  list-style: none;
+}
+a{
+  text-decoration: none;
 }
 </style>
