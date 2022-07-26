@@ -1,6 +1,5 @@
 <template>
   <div id="app">
-    <h1 class="text-danger">Prova</h1>
     <Header/>
     <Main/>
     <Footer/>
