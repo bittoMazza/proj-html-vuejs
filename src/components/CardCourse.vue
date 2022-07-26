@@ -1,7 +1,7 @@
 <template>
-    <div class="card-course col-6 d-flex my-4"> 
+    <div class="card-course col-6 d-flex my-4 px-3"> 
         <img class="course-img" :src="getCourseImg()" alt="">
-        <div>
+        <div class="ps-4">
             <h4> {{singleCourse.price}} </h4>
             <h5> {{singleCourse.courseTitle }}</h5>
             <div>

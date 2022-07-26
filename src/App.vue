@@ -23,5 +23,7 @@ export default {
 
 <style lang="scss">
 @import "~bootstrap/scss/bootstrap.scss";
-
+body{
+  
+}
 </style>
