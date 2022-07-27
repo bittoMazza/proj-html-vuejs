@@ -1,5 +1,5 @@
 <template>
-<div class="card shadow-card">
+<a class="card shadow-card">
   <img class="card-img-top" :src="getCardImg()" alt="Card image cap">
   <div class="px-4 py-3">
     <span>{{blog.type}}</span>
@@ -9,7 +9,7 @@
       <span><i class="bi bi-eye"></i> {{blog.view}} view</span>
     </div>
   </div> 
-</div>
+</a>
 </template>
 
 <script>

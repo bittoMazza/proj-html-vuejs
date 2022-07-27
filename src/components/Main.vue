@@ -6,33 +6,7 @@
     <!-- Sezione Smart Tutoring -->
     <SmartTutoringSec/>
 
-    <section class="py-5 top-learners-section">
-        <div class="container-fluid">
-            <div>
-                <div class="text-center">
-                    <span> GREAT WORDS ABOUT MAXCOACH </span>
-                    <h3> Access Smart Tutoring Program For Benefits </h3>
-                </div>
-                
-                <div class="d-flex"> 
-                    <div class="col-4">
-                        card
-                    </div>
-                    <div class="col-4">
-                        card
-                    </div>
-                    <div class="col-4">
-                        card
-                    </div>
-                </div>
-            </div>
-            <div class="text-center py-5">
-                <h5>Start today for getting Online Certification </h5>
-                <h3 class="pb-5">You can be your own guiding star with out help</h3>
-                <a href="#" class="main-btn-style" > Get Started now </a>
-            </div>
-        </div>
-    </section>
+    <TopLearners/>
 
     <!-- Sezione Risultati -->
     <ResultsSec/>
@@ -65,13 +39,15 @@ import SmartTutoringSec from "../sections/SmartTutoringSec.vue"
 import OnlineCoursesSec from "../sections/OnlineCoursesSec.vue"
 import ResultsSec from "../sections/ResultsSec.vue"
 import BestBlogs from "../sections/BestBlogs.vue"
+import TopLearners from "@/sections/TopLearners.vue"
 export default {
     components:{
-        SmartTutoringSec,
-        ResultsSec,
-        OnlineCoursesSec,
-        BestBlogs,
-    },
+    SmartTutoringSec,
+    ResultsSec,
+    OnlineCoursesSec,
+    BestBlogs,
+    TopLearners,
+},
     data:function(){
         return{
            

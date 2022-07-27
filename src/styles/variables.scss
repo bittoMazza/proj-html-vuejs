@@ -3,6 +3,10 @@ $basicColor:#7a6675;
 $boldText:#423d67;
 $secondTextColor:#48495f;
 $mainBgColor:#f6f3f5;
+$smallTextColor:#9ea4a5;
+.small-text-color{
+    color: $smallTextColor;
+}
 .second-color-text{
     color: $secondTextColor;
 }
