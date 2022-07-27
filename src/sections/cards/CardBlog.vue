@@ -1,5 +1,5 @@
 <template>
-<div class="card">
+<div class="card shadow-card">
   <img class="card-img-top" :src="getCardImg()" alt="Card image cap">
   <div class="px-4 py-3">
     <span>{{blog.type}}</span>
@@ -27,5 +27,7 @@ export default {
 
 <style lang="scss">
 @import "../../styles/variables.scss";
-
+.shadow-card{
+  box-shadow: 0 5px 20px 5px rgb(232, 232, 232);
+}
 </style>

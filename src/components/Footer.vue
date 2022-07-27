@@ -10,7 +10,10 @@
                     <li> {{this.contactInfo.email}}</li>
                 </ul>
                 <div class="my-2">
-                    logo logo logo logo
+                    <i class="bi bi-facebook"></i>
+                    <i class="bi bi-twitter"></i>
+                    <i class="bi bi-instagram"></i>
+                    <i class="bi bi-linkedin"></i>
                 </div>
             </div>
             <div class="col-6 d-flex">
@@ -29,9 +32,10 @@
                     </li>
                 </ul>
             </div>
-        </div>  
-        <a href="#start-page">torna su</a>    
+        </div>     
     </div>
+    <a href="#start-page" class="anchor"><i class="fs-3 bi bi-arrow-up"></i>
+</a> 
   </footer>
 </template>
 
@@ -50,7 +54,19 @@ export default {
 </script>
 
 <style lang="scss">
+@import "../styles/variables.scss";
     footer{
-        background-color:rgb(211, 165, 165);
+        background-color:$mainBgColor;
+        position:relative;
+        .anchor{
+            padding: 30px;
+            position: absolute;
+            bottom: 50px;
+            right: 50px;
+            color: white;
+            border-radius: 50%;
+            line-height: 0;
+            background-color: $mainColor;
+        }
     }
 </style>

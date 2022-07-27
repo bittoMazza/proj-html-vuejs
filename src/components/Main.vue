@@ -40,15 +40,18 @@
     <!-- Sezione Blogs -->
     <BestBlogs/>
 
-    <section class="subscribe-section py-5">
-        <div class="container">
+    <section class="subscribe-section py-large">
+        <div class="container position-relative px-5 py-2">
+            <img class="position-absolute top-0 end-0" src="../assets/Images/maxcoach-shape-09.png" alt="">
+            <img class="position-absolute top-50 end-0" src="../assets/Images/maxcoach-shape-02.png" alt="">
+            <img src="" alt="">
             <div class="text-center subscribe-zone">
                 <h3>Subscribe <span class="main-color-text fw-normal">Newsletters</span></h3>
-                <p class="py-2">Enter your email address register to our newsletter subscription delivered on a regular basis!</p>
+                <p class="py-3">Enter your email address register to our newsletter subscription delivered on a regular basis!</p>
                 <div class="input-group mb-3">
                     <input type="email" class="form-control" placeholder="Enter your email" aria-label="Recipient's username" aria-describedby="basic-addon2">
                     <div class="input-group-append">
-                        <button> Subscribe </button>
+                        <button class="main-btn-style"> Subscribe </button>
                     </div>
                 </div>
             </div>
@@ -89,12 +92,10 @@ main{
             width: 600px;
             input{
                 border: none;
-                background-color: $mainBgColor
+                background-color: $mainBgColor;
+                padding-left: 20px;
             }
             button{
-                border:none;
-                color:white;
-                background-color: $mainColor;
                 height: 100%;
             }
         }
