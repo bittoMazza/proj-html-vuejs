@@ -10,7 +10,7 @@
                  :singleCourse ="course"
                  />
             </div>   
-            <div class="text-center pt-5">
+            <div class="text-center py-5">
                 <a href="#" class="main-btn-style"> View all courses <i class="bi bi-arrow-right"></i> </a>    
             </div> 
         </div>     
