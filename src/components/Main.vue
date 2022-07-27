@@ -128,23 +128,8 @@ export default {
 </script>
 
 <style lang="scss">
-
-.online-courses-section{
-    background-color: rgb(218, 240, 232);
-}
-
-.btn-style{
-    text-decoration: none;
-    border-radius: 5px;
-    padding: 10px 20px;
-    background-color: blanchedalmond;
-}
-.smart-tutoring-section{
-    background-color: rgb(255, 255, 255);
-    border-bottom-right-radius: 500px;
-}
-.top-learners-section{
-    background-color: rgb(222, 253, 243);
+main{
+    background-color: #f6f3f5;
 }
 .best-blog-section{
     background-color: lightgrey;

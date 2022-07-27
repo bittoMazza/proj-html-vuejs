@@ -62,6 +62,10 @@ export default {
 </script>
 
 <style lang="scss">
+.smart-tutoring-section{
+    background-color: rgb(255, 255, 255);
+    border-bottom-right-radius: 500px;
+}
 .bottom-shadow{
     box-shadow: 0 40px 50px -30px rgb(97, 97, 97);
 }

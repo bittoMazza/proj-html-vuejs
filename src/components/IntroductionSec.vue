@@ -13,7 +13,7 @@
                     <img src="../assets/Images/about-me-profile-ohm4dxoearqbxny7q3bq1pzbdgofdx0tobbeqcvzd0.jpg" class="ms-5 rounded-circle w-75" alt="">
                 </div>
             </div>
-            <div class="clients-logo d-flex justify-content-between">
+            <div class="clients-logo d-flex justify-content-between py-4">
                 <div v-for="(client,index) in 6" :key="index" class="d-flex align-items-center">
                     <img  :src="getClientImg(index)" alt="">    
                 </div>

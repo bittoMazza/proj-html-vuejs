@@ -5,7 +5,7 @@
                 <span class="subtitle-text"> STIMULATED TO LEARN? </span>
                 <h3> Featured Online Courses </h3>
             </div>
-            <div class="d-flex flex-wrap">
+            <div class="d-flex flex-wrap pt-5">
                  <CardCourse  v-for="course in OnlineCourses" :key="course.id"
                  :singleCourse ="course"
                  />
@@ -87,5 +87,8 @@ export default {
 </script>
 
 <style lang="scss">
-@import "../styles/variables.scss"
+@import "../styles/variables.scss";
+.online-courses-section{
+    background-color: rgb(241, 251, 247);
+}
 </style>

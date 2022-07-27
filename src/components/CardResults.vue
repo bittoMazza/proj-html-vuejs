@@ -1,8 +1,8 @@
 <template>
   <div class="col py-5 text-center border border-top-0 border-bottom-0">
-    <h6>{{ resultData.title }}</h6>
-    <span class="d-block"> {{ resultData.num }}</span>
-    <span class="d-block"> {{ resultData.numInfo}}</span>
+    <h5 class="fw-bolder">{{ resultData.title }}</h5>
+    <span class="d-block number-result py-3"> {{ resultData.num }}</span>
+    <span class="d-block fw-bold subtitle-text"> {{ resultData.numInfo}}</span>
   </div>
 </template>
 
@@ -14,6 +14,11 @@ export default {
 }
 </script>
 
-<style>
-
+<style lang="scss">
+@import "../styles/variables.scss";
+.number-result{
+  color:$mainColor;
+  font-size: 4rem; 
+  font-weight: bolder;
+}
 </style>

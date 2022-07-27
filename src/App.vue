@@ -25,6 +25,7 @@ export default {
 @import "./styles/variables.scss";
 @import "~bootstrap-icons/font/bootstrap-icons.css"; 
 @import "~bootstrap/scss/bootstrap.scss";
+
 ul{
   margin: 0;
   padding: 0;

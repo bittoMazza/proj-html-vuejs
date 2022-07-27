@@ -28,17 +28,17 @@ export default {
                 {
                     title:'Proudly Received',
                     num:19,
-                    numInfo:'ENROLLED LEARNERS'
+                    numInfo:'COUNTRYWIDE AWARDS'
                 },
                 {
                     title:'Fimly Established',
                     num:24,
-                    numInfo:'ENROLLED LEARNERS'
+                    numInfo:'LOCAL BRANCHES'
                 },
                 {
                     title:'Succesfully trained',
                     num:1090,
-                    numInfo:'ENROLLED LEARNERS'
+                    numInfo:'BLOG POSTS'
                 },
             ],
         }
@@ -46,6 +46,8 @@ export default {
 }
 </script>
 
-<style>
-
+<style lang="scss">
+.results-section{
+    background-color: white;
+}
 </style>
