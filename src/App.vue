@@ -23,6 +23,7 @@ export default {
 
 <style lang="scss">
 @import "./styles/variables.scss";
+@import "~bootstrap-icons/font/bootstrap-icons.css"; 
 @import "~bootstrap/scss/bootstrap.scss";
 ul{
   margin: 0;
@@ -32,7 +33,12 @@ ul li{
   list-style: none;
 }
 a{
-  text-decoration: none;
+    cursor: pointer;
+    text-decoration: none;
+    color: $basicColor;
+    &:hover{
+      color: currentColor;
+    }
 }
 
 </style>

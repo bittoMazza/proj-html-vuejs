@@ -2,8 +2,8 @@
   <section class="py-5 smart-tutoring-section">
         <div class="container px-5">
             <div class="text-center">
-                <span> GREAT WORDS ABOUT MAXCOACH </span>
-                <h3> Access Smart Tutoring Program For Benefits </h3>
+                <span class="subtitle-text"> GREAT WORDS ABOUT MAXCOACH </span>
+                <span class="h3 d-block"> Access <span class="fw-normal main-color-text"> Smart Tutoring </span> Program For Benefits </span>
             </div>
             <div class="d-flex py-5">
                 <CardSmartTutoring v-for="(benefit,index) in tutoringBenefits" :key="index"
@@ -12,13 +12,16 @@
             </div>
             <div class="py-5 d-flex align-items-center"> 
                 <div class="col-8 ps-3">
-                    <img class="" src="../assets/Images/home-2-popup-video-poster.jpg" alt="">                
+                    <div class="position-relative w-75 ps-5">
+                        <img class="bottom-shadow w-100" src="../assets/Images/home-2-popup-video-poster.jpg" alt=""> 
+                        <img class="youtube-logo" src="../assets/Images/icon-youtube-play.png" alt="">
+                    </div>                               
                 </div>
-                <div class="col-4 pe-3">
-                    <span>GET STARTED <span>EFFORTLESSLY</span></span>
-                    <h2>Enjoy Our Companionship</h2>
-                    <p>Learning is a life-long journey that in fact we nerver finda the terminate stop. Stop searching,enjoy the process.</p>
-                    <a href="#">Download the guidebook --></a>
+                <div class="col-4 pe-4">
+                    <span class="subtitle-text">GET STARTED <span class="bold-text-color">EFFORTLESSLY</span></span>
+                    <span class="h2 d-block mt-3">Enjoy Our <span class="fw-normal main-color-text">Companionship</span></span>
+                    <p class="py-4">Learning is a life-long journey that in fact we nerver finda the terminate stop. Stop searching,enjoy the process.</p>
+                    <a href="#" class="underline-main-link">Download the guidebook <i class="bi bi-arrow-right"></i></a>
                 </div>   
             </div>          
         </div>
@@ -59,5 +62,13 @@ export default {
 </script>
 
 <style lang="scss">
-
+.bottom-shadow{
+    box-shadow: 0 40px 50px -30px rgb(97, 97, 97);
+}
+.youtube-logo{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
 </style>

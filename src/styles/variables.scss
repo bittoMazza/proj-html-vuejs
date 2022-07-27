@@ -1,8 +1,37 @@
 $mainColor:#25ab94;
+$basicColor:#7a6675;
+$boldText:#423d67;
+.bold-text-color{
+    font-weight: bold;
+    color: $boldText;
+}
+.basic-text-color{
+    color: #7a6675;
+}
+.main-color-text{
+    color: $mainColor;
+}
+.underline-main-link{
+    color: $mainColor;
+    font-weight: bold;
+    text-underline-offset: 5px;
+    text-decoration: underline;
+    text-decoration-color: rgb(200, 200, 200);
+}
+.subtitle-text{
+    color: grey;
+    font-size: 14px;
+}
 .main-btn-style{
-    padding: 10px 20px;
+    padding: 10px 30px;
     color: white;
     border: none;
     border-radius: 5px;
     background-color:$mainColor;
+    font-weight: bold;
+    font-size: 14px;
+    &:hover{
+        background-color: #3f3a64;
+        color: white;
+    }
 }

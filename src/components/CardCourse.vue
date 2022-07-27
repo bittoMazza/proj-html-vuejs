@@ -1,15 +1,15 @@
 <template>
-    <div class="card-course col-6 d-flex my-4 px-3"> 
+    <a class="card-course col-6 d-flex align-items-center my-4"> 
         <img class="course-img" :src="getCourseImg()" alt="">
         <div class="ps-4">
-            <h4> {{singleCourse.price}} </h4>
+            <h4 class="main-color-text fw-bolder"> {{getPrice(singleCourse.price)}} </h4>
             <h5> {{singleCourse.courseTitle }}</h5>
             <div>
-                <span> {{ singleCourse.numLessons }} Lessons </span>
-                <span> {{ singleCourse.numStudents }} Students </span>
+                <span> <i class="bi bi-file-earmark-text"></i> {{ singleCourse.numLessons }} Lessons </span>
+                <span> <i class="bi bi-person"></i> {{ singleCourse.numStudents }} Students </span>
             </div>
         </div>
-    </div>
+    </a>
 </template>
 
 <script>
@@ -20,15 +20,22 @@ export default {
     methods:{
         getCourseImg(){
             return require('../assets/Images/'+ this.singleCourse.courseImg + '')
+        },
+        getPrice(price){
+            if(price != 'Free'){
+                return '$'+price+'.00'
+            }
+            return 'Free'
         }
     }
 }
 </script>
 
-<style>
+<style lang="scss">
+@import "../styles/variables.scss";
 .course-img{
-    width: 100px;
-    height: 100px;
+    width: 150px;
+    height: 150px;
     border-radius: 50%;
     object-fit: cover;
 }

@@ -1,9 +1,9 @@
 <template>
   <div class="col-4 px-3">
     <img class="" :src="getCardImg()" alt="">
-    <h6> {{ cardBenefit.title }} </h6>
-    <p> {{ cardBenefit.info }}</p>
-    <a href="#"> {{cardBenefit.linkText}} --> </a>
+    <h6 class="pt-4"> {{ cardBenefit.title }} </h6>
+    <p class="py-1"> {{ cardBenefit.info }}</p>
+    <a href="#" class="fw-bold"> {{cardBenefit.linkText}} <i class="bi bi-arrow-right"></i> </a>
   </div>
 </template>
 

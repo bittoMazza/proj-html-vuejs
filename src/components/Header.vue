@@ -6,53 +6,34 @@
         <nav class="d-flex align-items-center">    
             <ul>
                 <li v-for="(link,index) in navLinks" :key="index" class="px-3">
-                    {{link}}
+                    <a href="#">{{link}}</a>
+                    <i class="ms-2 bi bi-chevron-down"></i>
                 </li>
             </ul>
-        <span class="px-2">User</span>
-        <div>
-            <input type="text" placeholder="Search...">
-            <span>Icona</span>
-        </div>S      
+            <a href="#"><i class="me-3 bi bi-person-circle"></i></a>
+            <div class="input-search">
+                <input type="text" placeholder="Search...">
+                <i class="bi bi-search"></i>
+            </div>     
         </nav>
         </div>
-    </div>
-   
-    <section class="py-4">
-        <div class="container">
-            <div class="d-flex align-items-center my-4">
-                <div class="col-5">
-                    <h2>Distant learning for further expansion</h2>
-                    <p>Learning is a life-long journey that in fact we nerver finda the terminate stop. Stop searching,enjoy the process.</p>
-                    <button class="my-2 main-btn-style"> Download free guide </button>
-                    <span class="d-block">Have questions? <a href="#">Get Free Sample --></a></span>
-                </div>
-                <div class="col-7">
-                    <img src="../assets/Images/about-me-profile-ohm4dxoearqbxny7q3bq1pzbdgofdx0tobbeqcvzd0.jpg" class="m-5 rounded-circle w-75" alt="">
-                </div>
-            </div>
-            <div class="clients-logo d-flex justify-content-between">
-                <div v-for="(client,index) in 6" :key="index" class="d-flex align-items-center">
-                    <img :src="getClientImg(index)" alt="">    
-                </div>
-            </div>
-        </div>
-    </section>
+    </div>  
+    <IntroductionSec/>
   </header>
 </template>
 
 <script>
+import IntroductionSec from './IntroductionSec.vue'
 export default {
+    components:{
+        IntroductionSec,
+    },
     data:function(){
         return{
             navLinks:['Home','Pages','Courses','Features','Blog','Shop']
         }
     },
-    methods:{
-        getClientImg(ind){
-            return require('../assets/Images/client_logo/client-logo-0'+(ind+1)+'.png')
-        }
-    }
+    
 }
 </script>
 
@@ -60,8 +41,16 @@ export default {
 @import "../styles/variables.scss";
 
 .header-container{
-        box-shadow: 0 5px 5px -5px #333;
 
+        box-shadow: 0 5px 5px -5px #333;
+        .input-search{
+            background-color: blue;
+            padding: 10px 10px;
+            input{
+                border: none;
+                background-color: transparent;
+            }
+        }
         .container-nav{
             nav ul{
             margin: 0;

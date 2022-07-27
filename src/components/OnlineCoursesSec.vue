@@ -1,8 +1,8 @@
 <template>
   <section class="py-5 online-courses-section">
-        <div class="container px-5">
+        <div class="container px-3">
             <div class="text-center">
-                <span> STIMULATED TO LEARN? </span>
+                <span class="subtitle-text"> STIMULATED TO LEARN? </span>
                 <h3> Featured Online Courses </h3>
             </div>
             <div class="d-flex flex-wrap">
@@ -11,7 +11,7 @@
                  />
             </div>   
             <div class="text-center pt-5">
-                <a href="#" class="main-btn-style"> View all courses </a>    
+                <a href="#" class="main-btn-style"> View all courses <i class="bi bi-arrow-right"></i> </a>    
             </div> 
         </div>     
     </section>
