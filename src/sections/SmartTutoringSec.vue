@@ -29,7 +29,7 @@
 </template>
 
 <script>
-import CardSmartTutoring from './CardSmartTutoring.vue'
+import CardSmartTutoring from './cards/CardSmartTutoring.vue'
 export default {
     components:{
         CardSmartTutoring,
@@ -62,6 +62,7 @@ export default {
 </script>
 
 <style lang="scss">
+@import "../styles/variables.scss";
 .smart-tutoring-section{
     background-color: rgb(255, 255, 255);
     border-bottom-right-radius: 500px;

@@ -18,7 +18,7 @@
 </template>
 
 <script >
-import CardCourse from "./CardCourse.vue"
+import CardCourse from "./cards/CardCourse.vue"
 export default {
     components:{
         CardCourse,

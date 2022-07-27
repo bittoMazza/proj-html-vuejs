@@ -1,17 +1,17 @@
 <template>
    <section class="best-blog-section py-5">
         <div class="container py-5">
-            <div class="d-flex gap-2 align-items-center col-12">   
+            <div class="d-flex  align-items-center col-12">   
                 <div class="col-4">
-                    <span class="d-block"> ENJOYABLE INSIGHTS </span>
-                    <h2>Most Viewed Best Blogs</h2>
+                    <span class="d-block subtitle-text"> ENJOYABLE INSIGHTS </span>
+                    <h2 class="py-3">Most Viewed Best Blogs</h2>
                     <ul>
                         <li v-for="blog in bestBlogs" :key="blog.id" class="my-4">
-                            <a href="#"> <i class="bi bi-arrow-right"> </i>  {{ blog.title }}</a>
+                            <a href="#" class="fw-bolder"> <i class="bi bi-arrow-right"></i>  {{ blog.title }}</a>
                         </li>
                     </ul>
                 </div>
-                <div class="col-4" v-for="prevblog in previewBlogs" :key="prevblog.id">
+                <div class="col-4 ps-5" v-for="prevblog in previewBlogs" :key="prevblog.id">
                     <CardBlog
                     :blog="prevblog"
                     />
@@ -22,7 +22,7 @@
 </template>
 
 <script>
-import CardBlog from "./CardBlog.vue"
+import CardBlog from "./cards/CardBlog.vue"
 export default {
     components:{
         CardBlog,
@@ -59,26 +59,19 @@ export default {
                 {
                     id:11,
                     type:'Artist',
-                    title:'Become a Better Blogger:Content Planning',
+                    title:'Promoting Your Online Business On Pinterest',
                     lastUpdate:'26/07/2022',
                     view:688,
                 },
                 {
                     id:15,
                     type:'Artist',
-                    title:'Become a Better Blogger:Content Planning',
+                    title:'Designing an Online Course from Expert\'s Perspective',
                     lastUpdate:'26/07/2022',
                     view:688,
                 },
                 {
                     id:20,
-                    type:'Artist',
-                    title:'Become a Better Blogger:Content Planning',
-                    lastUpdate:'26/07/2022',
-                    view:688,
-                },
-                {
-                    id:18,
                     type:'Artist',
                     title:'Become a Better Blogger:Content Planning',
                     lastUpdate:'26/07/2022',
@@ -91,6 +84,7 @@ export default {
 }
 </script>
 
-<style>
+<style lang="scss">
+@import "../styles/variables.scss";
 
 </style>

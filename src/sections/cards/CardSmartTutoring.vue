@@ -14,12 +14,12 @@ export default {
     },
     methods:{
         getCardImg(){
-            return require('../assets/Images/'+this.cardBenefit.image+'')
+            return require('../../assets/Images/'+this.cardBenefit.image+'')
         }
     }
 }
 </script>
 
-<style>
-
+<style lang="scss">
+@import "../../styles/variables.scss";
 </style>

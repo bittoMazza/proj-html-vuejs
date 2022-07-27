@@ -11,7 +11,7 @@
 </template>
 
 <script>
-import CardResults from "./CardResults.vue"
+import CardResults from "./cards/CardResults.vue"
 export default {
     components:{
         CardResults,
@@ -47,6 +47,7 @@ export default {
 </script>
 
 <style lang="scss">
+@import "../styles/variables.scss";
 .results-section{
     background-color: white;
 }

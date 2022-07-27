@@ -42,12 +42,14 @@
 
     <section class="subscribe-section py-5">
         <div class="container">
-            <div class="text-center">
-                <h3>Subscribe Newsletters</h3>
-                <p>Enter your email address register to our newsletter subscription delivered on a regular basis!</p>
-                <div>
-                    <input type="email" placeholder="Enter your email">
-                    <button> Subscribe </button>
+            <div class="text-center subscribe-zone">
+                <h3>Subscribe <span class="main-color-text fw-normal">Newsletters</span></h3>
+                <p class="py-2">Enter your email address register to our newsletter subscription delivered on a regular basis!</p>
+                <div class="input-group mb-3">
+                    <input type="email" class="form-control" placeholder="Enter your email" aria-label="Recipient's username" aria-describedby="basic-addon2">
+                    <div class="input-group-append">
+                        <button> Subscribe </button>
+                    </div>
                 </div>
             </div>
         </div>
@@ -56,10 +58,10 @@
 </template>
 
 <script>
-import SmartTutoringSec from "./SmartTutoringSec.vue"
-import OnlineCoursesSec from "./OnlineCoursesSec.vue"
-import ResultsSec from "./ResultsSec.vue"
-import BestBlogs from "./BestBlogs.vue"
+import SmartTutoringSec from "../sections/SmartTutoringSec.vue"
+import OnlineCoursesSec from "../sections/OnlineCoursesSec.vue"
+import ResultsSec from "../sections/ResultsSec.vue"
+import BestBlogs from "../sections/BestBlogs.vue"
 export default {
     components:{
         SmartTutoringSec,
@@ -77,10 +79,25 @@ export default {
 </script>
 
 <style lang="scss">
+@import "../styles/variables.scss";
 main{
-    background-color: #f6f3f5;
+    background-color: $mainBgColor;
     .subscribe-section{
         background-color: white;
+        .subscribe-zone{
+            margin: 0 auto;
+            width: 600px;
+            input{
+                border: none;
+                background-color: $mainBgColor
+            }
+            button{
+                border:none;
+                color:white;
+                background-color: $mainColor;
+                height: 100%;
+            }
+        }
     }
 }
 

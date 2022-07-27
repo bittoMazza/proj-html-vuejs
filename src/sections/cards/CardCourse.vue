@@ -19,7 +19,7 @@ export default {
     },
     methods:{
         getCourseImg(){
-            return require('../assets/Images/'+ this.singleCourse.courseImg + '')
+            return require('../../assets/Images/'+ this.singleCourse.courseImg + '')
         },
         getPrice(price){
             if(price != 'Free'){
@@ -32,7 +32,8 @@ export default {
 </script>
 
 <style lang="scss">
-@import "../styles/variables.scss";
+@import "../../styles/variables.scss";
+
 .course-img{
     width: 150px;
     height: 150px;

@@ -27,19 +27,19 @@ export default {
 @import "~bootstrap/scss/bootstrap.scss";
 
 ul{
-  margin: 0;
-  padding: 0;
-}
-ul li{
-  list-style: none;
-}
-a{
-    cursor: pointer;
-    text-decoration: none;
-    color: $basicColor;
-    &:hover{
-      color: currentColor;
-    }
-}
+    margin: 0;
+    padding: 0;
+  }
+  ul li{
+    list-style: none;
+  }
+  a{
+      cursor: pointer;
+      text-decoration: none;
+      color: $basicColor;
+      &:hover{
+        color: currentColor;
+      }
+  }
 
 </style>

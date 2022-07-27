@@ -4,15 +4,14 @@
         <div class="container-nav d-flex justify-content-between container align-items-center py-3">
         <img class="logo-navbar" src="../assets/Images/dark-logo.png" alt="logo-dark">
         <nav class="d-flex align-items-center">    
-            <ul>
+            <ul class="second-text-color">
                 <li v-for="(link,index) in navLinks" :key="index" class="px-3">
-                    <a href="#">{{link}}</a>
-                    <i class="ms-2 bi bi-chevron-down"></i>
+                    <a href="#">{{link}}<i class="ms-2 bi bi-chevron-down"></i></a>
                 </li>
             </ul>
-            <a href="#"><i class="me-3 bi bi-person-circle"></i></a>
+            <a href="#" class="fs-5"><i class="me-3 bi bi-person-circle"></i></a>
             <div class="input-search">
-                <input type="text" placeholder="Search...">
+                <input type="text" class="" placeholder="Search...">
                 <i class="bi bi-search"></i>
             </div>     
         </nav>
@@ -23,7 +22,7 @@
 </template>
 
 <script>
-import IntroductionSec from './IntroductionSec.vue'
+import IntroductionSec from '../sections/IntroductionSec.vue'
 export default {
     components:{
         IntroductionSec,
@@ -42,9 +41,9 @@ export default {
 
 .header-container{
 
-        box-shadow: 0 5px 5px -5px #333;
+        box-shadow: 0 5px 10px -5px rgb(222, 221, 221);
         .input-search{
-            background-color: blue;
+            background-color: $mainBgColor;
             padding: 10px 10px;
             input{
                 border: none;
