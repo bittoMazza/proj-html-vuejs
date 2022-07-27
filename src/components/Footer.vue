@@ -25,11 +25,12 @@
                 <h6>Information</h6>
                 <ul>
                     <li>
-
+                        
                     </li>
                 </ul>
             </div>
-        </div>      
+        </div>  
+        <a href="#start-page">torna su</a>    
     </div>
   </footer>
 </template>
@@ -50,6 +51,6 @@ export default {
 
 <style lang="scss">
     footer{
-        background-color: rgb(211, 165, 165);
+        background-color:rgb(211, 165, 165);
     }
 </style>

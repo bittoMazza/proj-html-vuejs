@@ -1,6 +1,6 @@
 <template>
   <header >
-    <div class="header-container">
+    <div class="header-container" id="start-page">
         <div class="container-nav d-flex justify-content-between container align-items-center py-3">
         <img class="logo-navbar" src="../assets/Images/dark-logo.png" alt="logo-dark">
         <nav class="d-flex align-items-center">    
@@ -24,7 +24,7 @@
                 <div class="col-5">
                     <h2>Distant learning for further expansion</h2>
                     <p>Learning is a life-long journey that in fact we nerver finda the terminate stop. Stop searching,enjoy the process.</p>
-                    <button class="my-2"> Download free guide </button>
+                    <button class="my-2 main-btn-style"> Download free guide </button>
                     <span class="d-block">Have questions? <a href="#">Get Free Sample --></a></span>
                 </div>
                 <div class="col-7">
@@ -57,7 +57,7 @@ export default {
 </script>
 
 <style lang="scss">
-
+@import "../styles/variables.scss";
 
 .header-container{
         box-shadow: 0 5px 5px -5px #333;

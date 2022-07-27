@@ -22,6 +22,7 @@ export default {
 </script>
 
 <style lang="scss">
+@import "./styles/variables.scss";
 @import "~bootstrap/scss/bootstrap.scss";
 ul{
   margin: 0;
@@ -33,4 +34,5 @@ ul li{
 a{
   text-decoration: none;
 }
+
 </style>
