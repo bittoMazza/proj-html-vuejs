@@ -13,7 +13,6 @@
             <div class="py-large d-flex align-items-center"> 
                 <div class="col-8">
                     <div class="position-relative start-0 w-75">
-                        <img src="../assets/Images/maxcoach-shape-07-100x100.png" class="position-absolute top-100 end-0 " alt="">
                         <img class="bottom-shadow w-100" src="../assets/Images/home-2-popup-video-poster.jpg" alt=""> 
                         <img class="youtube-logo" src="../assets/Images/icon-youtube-play.png" alt="">
                     </div>                               

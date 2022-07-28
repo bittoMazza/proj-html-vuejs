@@ -9,7 +9,7 @@
                     <li class="my-2"> {{this.contactInfo.phone}}</li>
                     <li> {{this.contactInfo.email}}</li>
                 </ul>
-                <div class="my-2 social">
+                <div class="my-2 social second-color-text">
                     <a href="#"><i class="bi bi-facebook"></i></a>
                     <a href="#"><i class="bi bi-twitter"></i></a>
                     <a href="#"><i class="bi bi-instagram"></i></a>
@@ -17,21 +17,28 @@
                 </div>
             </div>
             <div class="col-6 d-flex">
-                <ul class="px-2">    
-                    <li class="h6">Explore</li>
-                    <li>dad</li>
-                    <li>dad</li>
-                </ul>
-                <ul class="px-2">
-                     <h6>Information</h6>
-                    <li>p</li>
-                </ul>
-                <ul class="px-2">
-                     <h6>Information</h6>
-                    <li>
-                        
-                    </li>
-                </ul>
+                <div>
+                    <ul class="px-2 ul-height">    
+                        <li>
+                            Start here 
+                        </li>
+                        <li>
+                            Blog
+                        </li>
+                        <li>
+                            About Us
+                        </li>                                    
+                    </ul>
+                </div>
+                <div>
+                    <h6>Information </h6>
+                    <ul>
+                        <li v-for="(link,index) in informations" :key="index">
+                            <a href="#" class="secondary-color-text">{{link.name}}</a>
+                        </li>
+                    </ul>
+                </div>
+               
             </div>
         </div> 
         <div class="copyright text-center">
@@ -78,6 +85,24 @@ export default {
                     linkText:'Contact us'
                 },
 
+            ],
+            informations:[
+                {
+                    urlLink:'dasdasdas',
+                    name:'Membership'
+                },
+                {
+                    urlLink:'dasdasdas',
+                    name:'Purchase guide'
+                },
+                {
+                    urlLink:'dasdasdas',
+                    name:'Privacy policy'
+                },
+                {
+                    urlLink:'dasdasdas',
+                    name:'Terms of services'
+                },
             ]
 
         }
@@ -104,6 +129,9 @@ export default {
         .social i{
             margin:0 10px;
             color: $smallTextColor;
+        }
+        .ul-height{
+            height: 70px;
         }
     }
 </style>
