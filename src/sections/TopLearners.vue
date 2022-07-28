@@ -4,7 +4,7 @@
             <div>
                 <div class="text-center">
                     <span class="subtitle-text"> GREAT WORDS ABOUT MAXCOACH </span>
-                    <h3> Our <span class="h3 main-color-text fw-normal">top learner's </span>verbatim </h3>
+                    <h3 class="fw-bold bold-text-color"> Our <span class="h3 main-color-text fw-normal">top learner's </span>verbatim </h3>
                 </div>
                 
                 <div class="d-flex py-4"> 
@@ -14,7 +14,8 @@
                 </div>
             </div>
             <div class="text-center py-5">
-                <div class="container px-5 position-relative">  
+                <div class="online-certification-box px-5 position-relative">  
+                    <i class="bi bi-circle position-absolute bottom-50 start-0 circle-bg-image"></i>  
                     <img class="position-absolute top-50 start-0" src="../assets/Images/maxcoach-shape-01.png" alt=""> 
                     <img class="position-absolute top-50 end-0" src="../assets/Images/maxcoach-shape-02.png" alt="">
                     <h5>Start today for getting <span class="h5 main-color-text fw-normal">Online Certification </span></h5>
@@ -60,6 +61,11 @@ export default {
 }
 </script>
 
-<style>
+<style lang="scss">
+@import "../styles/variables.scss";
 @import "../styles/class.scss";
+.online-certification-box{
+    margin: 0 300px;
+}
+
 </style>

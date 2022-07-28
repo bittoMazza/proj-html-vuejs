@@ -4,10 +4,10 @@
             <div class="d-flex  align-items-center col-12">   
                 <div class="col-4">
                     <span class="d-block subtitle-text"> ENJOYABLE INSIGHTS </span>
-                    <h2 class="py-3">Most Viewed Best Blogs</h2>
+                    <h2 class="py-3 bold-text-color fw-bold">Most Viewed <span class="main-color-text fw-normal">Best Blogs </span></h2>
                     <ul>
                         <li v-for="blog in bestBlogs" :key="blog.id" class="my-4">
-                            <a href="#" class="fw-bolder"> <i class="bi bi-arrow-right"></i>  {{ blog.title }}</a>
+                            <a href="#" class="fw-bolder d-flex"> <i class="bi bi-arrow-right"></i>  {{ blog.title }}</a>
                         </li>
                     </ul>
                 </div>
@@ -33,7 +33,7 @@ export default {
         {
             id:80,
             image:"artist-blog-03-480x352.jpeg",
-            type:'Artist',
+            type:'ARTIST',
             title:'Become a Better Blogger:Content Planning',
             lastUpdate:'26/07/2022',
             view:688,
@@ -41,7 +41,7 @@ export default {
         {
             id:90,
             image:"artist-blog-01-480x352.jpg",
-            type:'Artist',
+            type:'ARTIST',
             title:'Pocket-Sized Notebooks Hold Miniature Paintings',
             lastUpdate:'26/07/2022',
             view:688,

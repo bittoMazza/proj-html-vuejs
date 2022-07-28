@@ -3,24 +3,25 @@
         <div class="container px-5">
             <div class="text-center">
                 <span class="subtitle-text"> GREAT WORDS ABOUT MAXCOACH </span>
-                <span class="h3 d-block"> Access <span class="fw-normal main-color-text"> Smart Tutoring </span> Program For Benefits </span>
+                <span class="h3 fw-bold d-block bold-text-color"> Access <span class="fw-normal main-color-text"> Smart Tutoring </span> Program For Benefits </span>
             </div>
             <div class="d-flex py-5">
                 <CardSmartTutoring v-for="(benefit,index) in tutoringBenefits" :key="index"
                 :cardBenefit="benefit"
                 />
             </div>
-            <div class="py-5 d-flex align-items-center"> 
-                <div class="col-8 ps-3">
-                    <div class="position-relative w-75 ps-5">
+            <div class="py-large d-flex align-items-center"> 
+                <div class="col-8">
+                    <div class="position-relative start-0 w-75">
+                        <img src="../assets/Images/maxcoach-shape-07-100x100.png" class="position-absolute top-100 end-0 " alt="">
                         <img class="bottom-shadow w-100" src="../assets/Images/home-2-popup-video-poster.jpg" alt=""> 
                         <img class="youtube-logo" src="../assets/Images/icon-youtube-play.png" alt="">
                     </div>                               
                 </div>
-                <div class="col-4 pe-4">
-                    <span class="subtitle-text">GET STARTED <span class="bold-text-color">EFFORTLESSLY</span></span>
-                    <span class="h2 d-block mt-3">Enjoy Our <span class="fw-normal main-color-text">Companionship</span></span>
-                    <p class="py-4">Learning is a life-long journey that in fact we nerver finda the terminate stop. Stop searching,enjoy the process.</p>
+                <div class="col-4 pe-5">
+                    <span class="subtitle-text">GET STARTED <span class="fw-bold">EFFORTLESSLY</span></span>
+                    <span class="h2 fw-bold bold-text-color d-block mt-3">Enjoy Our <span class="fw-normal main-color-text">Companionship</span></span>
+                    <p class="py-4 p-text">Learning is a life-long journey that in fact we nerver finda the terminate stop. Stop searching,enjoy the process.</p>
                     <a href="#" class="underline-main-link">Download the guidebook <i class="bi bi-arrow-right"></i></a>
                 </div>   
             </div>          

@@ -16,6 +16,7 @@
 
     <section class="subscribe-section py-large">
         <div class="container position-relative px-5 py-2">
+            <i class="bi bi-circle position-absolute top-50 start-0 circle-bg-image"></i>    
             <img class="position-absolute top-0 end-0" src="../assets/Images/maxcoach-shape-09.png" alt="">
             <img class="position-absolute top-50 end-0" src="../assets/Images/maxcoach-shape-02.png" alt="">
             <img src="" alt="">
@@ -75,6 +76,10 @@ main{
             button{
                 height: 100%;
             }
+        }
+
+        i{
+            color:$mainColor;
         }
     }
 }

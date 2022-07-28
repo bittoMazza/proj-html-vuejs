@@ -1,11 +1,5 @@
-.font-bold{
-    font-weight: 700;
-}
-.font-normal{
-    font-weight:400; 
-}
+
 *{
-    @import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;1,700&display=swap');
     font-family: 'Poppins', sans-serif;
 }
 .small-text-color{
@@ -15,7 +9,6 @@
     color: $secondTextColor;
 }
 .bold-text-color{
-    font-weight: bold;
     color: $boldText;
 }
 .basic-text-color{

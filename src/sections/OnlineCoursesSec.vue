@@ -3,7 +3,7 @@
         <div class="container px-3">
             <div class="text-center">
                 <span class="subtitle-text"> STIMULATED TO LEARN? </span>
-                <h3 class="font-bold"> Featured Online Courses </h3>
+                <h3 class="fw-bold"> Featured Online Courses </h3>
             </div>
             <div class="d-flex flex-wrap pt-5">
                  <CardCourse  v-for="course in OnlineCourses" :key="course.id"

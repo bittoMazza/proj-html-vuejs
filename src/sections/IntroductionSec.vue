@@ -3,7 +3,7 @@
         <div class="container">
             <div class="d-flex align-items-center my-4">
                 <div class="col-5 pe-5">
-                    <h2 class="font-bold bold-text-color">Distant learning for further expansion</h2>
+                    <h2 class="fw-bold bold-text-color">Distant learning for further expansion</h2>
                     <p class="p-text font-normal">Learning is a life-long journey that in fact we nerver finda the terminate stop. Stop searching,enjoy the process.</p>
                     <button class="my-3 main-btn-style"> <i class="bi bi-download"></i> Download free guide </button>
                     <span class="d-block">Have questions? <a href="#" class="underline-main-link fw-bold">Get Free Sample <i class="bi bi-arrow-right"> </i> </a></span>
