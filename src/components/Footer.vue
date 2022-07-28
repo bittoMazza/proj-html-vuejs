@@ -1,7 +1,7 @@
 <template>
   <footer class="py-5">
     <div class="container">
-        <div class="d-flex">
+        <div class="d-flex pb-5">
             <div class="col-6">    
                 <h5>Address</h5>
                 <ul>
@@ -18,23 +18,37 @@
             </div>
             <div class="col-6 d-flex">
                 <div>
-                    <ul class="px-2 ul-height">    
-                        <li>
-                            Start here 
+                    <h6 class="pb-3">Information </h6> 
+                    <div class="d-flex align-items-center">
+                        <ul class="">                          
+                        <li  class="secondary-color-text">
+                           <a href="#" class="footer-link">Start Here</a>
                         </li>
-                        <li>
-                            Blog
+                        <li class="secondary-color-text my-2">
+                            <a href="#" class="footer-link">Blog</a> 
                         </li>
-                        <li>
-                            About Us
+                        <li class="secondary-color-text">
+                            <a href="#" class="footer-link">About Us</a> 
                         </li>                                    
                     </ul>
+                    <ul class="ms-5">                          
+                        <li  class="secondary-color-text">
+                           <a href="#" class="footer-link">Success Story</a>
+                        </li>
+                        <li class="secondary-color-text my-2">
+                            <a href="#" class="footer-link">Course</a> 
+                        </li>
+                        <li class="secondary-color-text">
+                            <a href="#" class="footer-link">Contact us</a> 
+                        </li>                                    
+                    </ul>
+                    </div>                    
                 </div>
-                <div>
-                    <h6>Information </h6>
+                <div class="ms-5">
+                    <h6 class="pb-3">Information </h6>
                     <ul>
-                        <li v-for="(link,index) in informations" :key="index">
-                            <a href="#" class="secondary-color-text">{{link.name}}</a>
+                        <li class="my-2" v-for="(link,index) in informations" :key="index">
+                            <a href="#" class="footer-link">{{link.name}}</a>
                         </li>
                     </ul>
                 </div>
@@ -55,7 +69,7 @@ export default {
     data:function(){
         return{
             contactInfo:{
-                address:'Indirizzo e via',
+                address:'382 NE 191st St # 87394 Miami,FL 33179-3899',
                 phone:'305 547-9909',
                 email:'support@maxcoach.com'
             },
@@ -130,8 +144,8 @@ export default {
             margin:0 10px;
             color: $smallTextColor;
         }
-        .ul-height{
-            height: 70px;
+        .footer-link{
+            font-size: 14px;
         }
     }
 </style>

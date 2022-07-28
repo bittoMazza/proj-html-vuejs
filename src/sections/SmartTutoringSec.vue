@@ -11,7 +11,10 @@
                 />
             </div>
             <div class="py-large d-flex align-items-center"> 
-                <div class="col-8">
+                <div class="col-8 position-relative">
+                    <img class="position-absolute top-50 start-0 translate-middle" src="../assets/Images/maxcoach-shape-05-150x150.png" alt="dasdasdsadadasdas">
+                    <img class="position-absolute top-100 start-50 translate-middle" src="../assets/Images/maxcoach-shape-07-150x150.png" alt="dasdasdsadadasdas">
+                    <i class="bi bi-circle position-absolute top-0 end-0 circle-bg-image"></i>
                     <div class="position-relative start-0 w-75">
                         <img class="bottom-shadow w-100" src="../assets/Images/home-2-popup-video-poster.jpg" alt=""> 
                         <img class="youtube-logo" src="../assets/Images/icon-youtube-play.png" alt="">
@@ -77,4 +80,5 @@ export default {
     left: 50%;
     transform: translate(-50%, -50%);
 }
+
 </style>

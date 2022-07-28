@@ -63,14 +63,14 @@ export default {
                     textContent: "I am free to learn at my own pace,follow my own schedule and choose the subject. I want to learn from the syllabus. Great study portal for people like me",
                     image: require("../assets/Images/learners/testimonial-avata-01.jpg"),
                     name: "CICCIO PASTICCIO",
-                    position: "Freelancer"
+                    position: "IT Specialist"
                 },
                 {
                     title: "High level of efficency and scintific teaching methods",
                     textContent: "I am free to learn at my own pace,follow my own schedule and choose the subject. I want to learn from the syllabus. Great study portal for people like me",
                     image: require("../assets/Images/learners/testimonial-avata-03.jpg"),
                     name: "FLORENZ THEMES",
-                    position: "Freelancer"
+                    position: "Multimedia Admin"
                 },
                 {
                     title: "High level of efficency and scintific teaching methods",

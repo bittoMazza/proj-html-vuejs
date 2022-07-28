@@ -2,6 +2,8 @@
 *{
     font-family: 'Poppins', sans-serif;
 }
+
+/* Color text */
 .small-text-color{
     color: $smallTextColor;
 }
@@ -12,11 +14,15 @@
     color: $boldText;
 }
 .basic-text-color{
-    color: #7a6675;
+    color: $basicColor;
 }
 .main-color-text{
     color: $mainColor;
 }
+.p-text{
+    color:$pText;
+}
+
 .underline-main-link{
     color: $mainColor;
     font-weight: bold;
@@ -42,11 +48,6 @@
         color: white;
     }
 }
-
-.p-text{
-   color:$pText;
-}
-
 .py-large{
     padding: 100px 0;
 }
@@ -57,9 +58,12 @@
     font-size: 50px;
     color: burlywood;
 }
+
+/* Carousel style */
 .carousel-dot{
     font-size: 12px;
     color: $smallTextColor;
+    cursor: pointer;
 }
 .opacity-carousel{
     opacity: 0.4;
