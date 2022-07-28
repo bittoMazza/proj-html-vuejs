@@ -11,7 +11,7 @@
                  />
             </div>   
             <div class="text-center py-5">
-                <a href="#" class="main-btn-style"> View all courses <i class="bi bi-arrow-right"></i> </a>    
+                <a href="#" class="main-btn-style px-5"> View all courses <i class="bi bi-arrow-right"></i> </a>    
             </div> 
         </div>     
     </section>

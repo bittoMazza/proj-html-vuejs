@@ -5,8 +5,8 @@
             <h4 class="main-color-text fw-bolder"> {{getPrice(singleCourse.price)}} </h4>
             <h5 class="course-title fw-bolder"> {{singleCourse.courseTitle }}</h5>
             <div>
-                <span class="pe-2"> <i class="bi bi-file-earmark-text"></i> {{ singleCourse.numLessons }} Lessons </span>
-                <span> <i class="bi bi-person"></i> {{ singleCourse.numStudents }} Students </span>
+                <span class="pe-2 small-text-color"> <i class="bi bi-file-earmark-text"></i> {{ singleCourse.numLessons }} Lessons </span>
+                <span class="small-text-color"> <i class="bi bi-person"></i> {{ singleCourse.numStudents }} Students </span>
             </div>
         </div>
     </a>
@@ -43,6 +43,7 @@ export default {
     height: 150px;
     border-radius: 50%;
     object-fit: cover;
+    
 }
 }
 
