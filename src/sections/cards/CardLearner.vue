@@ -6,7 +6,7 @@
         <img class="avatar" :src="learner.image" alt="">
         <div class="ms-3">
             <h6>{{learner.name}}</h6>
-            <span class="small-text-color">{{learner.position}}</span>
+            <span class="small-text-color"> / {{learner.position}}</span>
         </div>
     </div>
   </div>
@@ -22,6 +22,7 @@ export default {
 
 <style>
 @import "../../styles/variables.scss";
+@import "../../styles/class.scss";
 .card-container{
     background-color: white;
     border-radius: 5px;

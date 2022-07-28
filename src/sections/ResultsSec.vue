@@ -48,6 +48,7 @@ export default {
 
 <style lang="scss">
 @import "../styles/variables.scss";
+@import "../styles/class.scss";
 .results-section{
     background-color: white;
 }

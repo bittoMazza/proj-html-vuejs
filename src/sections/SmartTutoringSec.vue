@@ -63,6 +63,7 @@ export default {
 
 <style lang="scss">
 @import "../styles/variables.scss";
+@import "../styles/class.scss";
 .smart-tutoring-section{
     background-color: rgb(255, 255, 255);
     border-bottom-right-radius: 500px;

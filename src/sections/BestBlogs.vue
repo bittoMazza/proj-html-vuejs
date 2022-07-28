@@ -86,5 +86,6 @@ export default {
 
 <style lang="scss">
 @import "../styles/variables.scss";
+@import "../styles/class.scss";
 
 </style>

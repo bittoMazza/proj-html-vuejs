@@ -59,6 +59,7 @@ export default {
 
 <style lang="scss">
 @import "../styles/variables.scss";
+@import "../styles/class.scss";
 main{
     background-color: $mainBgColor;
     .subscribe-section{

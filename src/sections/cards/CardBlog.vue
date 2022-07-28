@@ -27,6 +27,7 @@ export default {
 
 <style lang="scss">
 @import "../../styles/variables.scss";
+@import "../../styles/class.scss";
 .shadow-card{
   box-shadow: 0 5px 20px 5px rgb(232, 232, 232);
 }

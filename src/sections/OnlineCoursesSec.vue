@@ -88,6 +88,7 @@ export default {
 
 <style lang="scss">
 @import "../styles/variables.scss";
+@import "../styles/class.scss";
 .online-courses-section{
     background-color: rgb(241, 251, 247);
 }

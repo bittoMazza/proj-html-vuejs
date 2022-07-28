@@ -33,6 +33,7 @@ export default {
 
 <style lang="scss">
 @import "../../styles/variables.scss";
+@import "../../styles/class.scss";
 .card-course{
     &:hover .course-title{
         color:$mainColor;

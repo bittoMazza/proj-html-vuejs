@@ -6,13 +6,13 @@
         <nav class="d-flex align-items-center">    
             <ul class="second-text-color">
                 <li v-for="(link,index) in navLinks" :key="index" class="px-3">
-                    <a href="#">{{link}}<i class="ms-2 bi bi-chevron-down"></i></a>
+                    <a href="#">{{link}}<i class="ms-1 bi bi-chevron-down"></i></a>
                 </li>
             </ul>
             <a href="#" class="fs-5"><i class="me-3 bi bi-person-circle"></i></a>
-            <div class="input-search">
+            <div class="input-search ms-2">
                 <input type="text" class="" placeholder="Search...">
-                <i class="bi bi-search"></i>
+                <button class="search-button"><i class="bi bi-search main-color-text"></i></button>
             </div>     
         </nav>
         </div>
@@ -38,7 +38,7 @@ export default {
 
 <style lang="scss">
 @import "../styles/variables.scss";
-
+@import "../styles/class.scss";
 .header-container{
 
         box-shadow: 0 5px 10px -5px rgb(222, 221, 221);
@@ -64,5 +64,9 @@ export default {
         }
     }
 
-
+ .search-button{
+                border:none;
+                height: 100%;
+                background-color: $mainBgColor;
+            }
 </style>

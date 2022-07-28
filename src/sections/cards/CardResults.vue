@@ -16,6 +16,7 @@ export default {
 
 <style lang="scss">
 @import "../../styles/variables.scss";
+@import "../../styles/class.scss";
 .number-result{
   color:$mainColor;
   font-size: 4rem; 
